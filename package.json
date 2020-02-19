@@ -1,7 +1,7 @@
 {
-  "name": "cheng-lb4-order-api",
+  "name": "customer-managment-api",
   "version": "1.0.0",
-  "description": "pizza order api",
+  "description": "customer management api",
   "keywords": [
     "loopback-application",
     "loopback"

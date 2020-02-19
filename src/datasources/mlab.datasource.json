@@ -2,9 +2,9 @@
   "name": "mlab",
   "connector": "mongodb",
   "url": "",
-  "host": "ds159574.mlab.com",
-  "port": 59574,
-  "user": "user01",
-  "password": "user01",
-  "database": "pizza-order"
+  "host": "ds011281.mlab.com",
+  "port": 11281,
+  "user": "cyrus",
+  "password": "xzw900625",
+  "database": "sale-management"
 }

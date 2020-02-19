@@ -16,20 +16,20 @@ import {
   del,
   requestBody,
 } from '@loopback/rest';
-import { Customer } from '../models';
-import { CustomerRepository } from '../repositories';
+import {Customer} from '../models';
+import {CustomerRepository} from '../repositories';
 
 export class CustomerController {
   constructor(
     @repository(CustomerRepository)
     public customerRepository: CustomerRepository,
-  ) { }
+  ) {}
 
   @post('/customers', {
     responses: {
       '200': {
         description: 'Customer model instance',
-        content: { 'application/json': { schema: { 'x-ts-type': Customer } } },
+        content: {'application/json': {schema: {'x-ts-type': Customer}}},
       },
     },
   })
@@ -41,7 +41,7 @@ export class CustomerController {
     responses: {
       '200': {
         description: 'Customer model count',
-        content: { 'application/json': { schema: CountSchema } },
+        content: {'application/json': {schema: CountSchema}},
       },
     },
   })
@@ -57,7 +57,7 @@ export class CustomerController {
         description: 'Array of Customer model instances',
         content: {
           'application/json': {
-            schema: { type: 'array', items: { 'x-ts-type': Customer } },
+            schema: {type: 'array', items: {'x-ts-type': Customer}},
           },
         },
       },
@@ -73,7 +73,7 @@ export class CustomerController {
     responses: {
       '200': {
         description: 'Customer PATCH success count',
-        content: { 'application/json': { schema: CountSchema } },
+        content: {'application/json': {schema: CountSchema}},
       },
     },
   })
@@ -88,7 +88,7 @@ export class CustomerController {
     responses: {
       '200': {
         description: 'Customer model instance',
-        content: { 'application/json': { schema: { 'x-ts-type': Customer } } },
+        content: {'application/json': {schema: {'x-ts-type': Customer}}},
       },
     },
   })
